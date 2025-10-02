@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @user %>
-<%= render @micropost %>
+<%= render @micropost if @micropost.present? %>
 
 <div>
   <%= link_to "Edit this user", edit_user_path(@user) %> |
